@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE 2024 Analysis</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        .section { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
+        .counter { text-align: center; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JEE 2024 Seat Allotment Analysis</h1>
+        
+        <div class="section">
+            <h2>IITs Analysis</h2>
+            <p>Analysis of seat trends, cutoffs, and admissions in IITs based on JEE Advanced rankings.</p>
+            <ul>
+                <li>Top IITs with highest cutoff ranks.</li>
+                <li>Category-wise seat allocation.</li>
+                <li>Trends compared to previous years.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Other Institutions Analysis</h2>
+            <p>Analysis of NITs, IIITs, and GFTIs based on JEE Mains rankings.</p>
+            <ul>
+                <li>Closing ranks for top NITs and IIITs.</li>
+                <li>Comparison with IITs in terms of seat allocation.</li>
+                <li>State-wise distribution of admissions.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Female Candidates Analysis</h2>
+            <p>Trends and seat allocation analysis specifically for female candidates.</p>
+            <ul>
+                <li>Special reservation policies for female candidates.</li>
+                <li>Increase in female enrollments over years.</li>
+                <li>Institutions with highest female representation.</li>
+            </ul>
+        </div>
+        
+        <div class="counter">
+            <p>Visitor Count: <span id="visitorCount">0</span></p>
+        </div>
+    </div>
+
+    <script>
+        if (localStorage.getItem('visitorCount')) {
+            let count = parseInt(localStorage.getItem('visitorCount'));
+            count++;
+            localStorage.setItem('visitorCount', count);
+            document.getElementById('visitorCount').textContent = count;
+        } else {
+            localStorage.setItem('visitorCount', 1);
+            document.getElementById('visitorCount').textContent = 1;
+        }
+    </script>
+</body>
+</html>
