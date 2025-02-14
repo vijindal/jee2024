@@ -1,14 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seat Allocation Analysis</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f8f9fa;
+        }
+        header {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            height: 100px; /* Set a fixed height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        footer {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .menu {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu ul li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .key-takeaway {
+            background: #e9f5ff;
+            padding: 15px;
+            margin-top: 10px;
+            border-left: 5px solid #007bff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 10px;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .menu {
+                width: 100%;
+                text-align: center;
+            }
+            .menu ul li {
+                display: inline;
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>Seat Allocation Analysis in IITs/NITs/GFTIs through JEE 2024</header>
+    <header>Analysis of Seat Allocation in IITs, NITs, and GFTIs via JEE 2024
+
+    </header>
     <div class="container">
         <nav class="menu">
             <ul>
@@ -38,14 +133,7 @@
                 <tr><td>IIT Delhi</td><td>Electrical Engineering (B.Tech)</td><td>812</td></tr>
                 <tr><td>IIT Madras</td><td>Electrical Engineering (B.Tech)</td><td>942</td></tr>
             </table>
-            <div class="key-takeaways">
-                <strong>Key Takeaways:</strong>
-                <ul>
-                    <li>CSE at IIT Bombay, Delhi, and Madras remains the most competitive.</li>
-                    <li>Electrical Engineering is the next most competitive field after CSE.</li>
-                </ul>
-            </div>
-        
+           
             <h2>Least Competitive IIT Programs (Highest Closing Ranks)</h2>
             <table>
                 <tr>
@@ -79,23 +167,8 @@
                 <tr><td>IIT Kanpur</td><td>7,036</td></tr>
                 <tr><td>IIT Hyderabad</td><td>7,084</td></tr>
             </table>
-            <div class="key-takeaways">
-                <p>💡 <strong>IIT Bombay and IIT Delhi lead in competitiveness.</strong></p>
-            </div>
         
-            <h2>Rising and Falling Branch Trends in IITs</h2>
-            <div class="key-takeaways">
-                <p>📈 <strong>Rising Branches:</strong></p>
-                <ul>
-                    <li>Artificial Intelligence & Data Science (Closing ranks under 2,500 at IIT Hyderabad & IIT Madras)</li>
-                    <li>Mathematics & Computing (Closing ranks under 3,000)</li>
-                </ul>
-                <p>📉 <strong>Declining Branches:</strong></p>
-                <ul>
-                    <li>Civil & Mechanical Engineering (Closing ranks exceeding 12,000 in newer IITs)</li>
-                    <li>Metallurgical & Mining Engineering (Highest closing ranks at multiple IITs)</li>
-                </ul>
-            </div>
+            
             <h2 id="other-all">Other Institutions (All Candidates)</h2>
 
     <h2>1. Top 10 Most Competitive NITs/IIITs Programs (Lowest Closing Ranks)</h2>
@@ -117,8 +190,6 @@
         <tr><td>IIIT Allahabad</td><td>Computer Science & Engineering (B.Tech)</td><td>2,755</td></tr>
     </table>
 
-    <p><strong>Key Takeaway:</strong> CSE at top NITs (Trichy, Warangal, Surathkal) competes with IITs for high-ranking students.</p>
-
     <h2>2. Least Competitive NITs/IIITs/GFTIs Programs (Highest Closing Ranks)</h2>
     <table border="1">
         <tr>
@@ -132,8 +203,6 @@
         <tr><td>NIT Arunachal Pradesh</td><td>Biotechnology (B.Tech)</td><td>1,102,422</td></tr>
     </table>
 
-    <p><strong>Key Takeaway:</strong> Remote NITs struggle to attract students, with closing ranks exceeding 1 million.</p>
-
     <h2>3. Top 5 NITs Based on Overall Competitiveness (Lowest Avg. Closing Rank)</h2>
     <table border="1">
         <tr>
@@ -146,21 +215,6 @@
         <tr><td>NIT Calicut</td><td>7,524</td></tr>
         <tr><td>NIT Allahabad</td><td>8,124</td></tr>
     </table>
-
-    <p><strong>Key Takeaway:</strong> NIT Trichy is the most competitive among NITs.</p>
-
-    <h2>4. Rising and Falling Branch Trends in NITs/IIITs</h2>
-    <p><strong>Rising Branches:</strong></p>
-    <ul>
-        <li>CSE, AI & Data Science (IIIT Hyderabad, IIIT Bangalore, NIT Trichy among top choices)</li>
-        <li>Electronics & Communication (Ranks under 10,000 in top NITs)</li>
-    </ul>
-
-    <p><strong>Declining Branches:</strong></p>
-    <ul>
-        <li>Civil, Mechanical, and Biotechnology (Ranks above 1 lakh in many NITs)</li>
-        <li>Metallurgical Engineering (Ranks exceeding 80,000 in most NITs)</li>
-    </ul>
 
     <h2 id="iit-female">IITs Analysis (Female Candidates)</h2>
     
@@ -182,9 +236,7 @@
         <tr><td>IIT Delhi</td><td>Electrical Engineering (B.Tech)</td><td>1,943</td></tr>
         <tr><td>IIT Madras</td><td>Electrical Engineering (B.Tech)</td><td>2,110</td></tr>
     </table>
-    <p>🔹 CSE remains the most competitive program for female candidates across IITs.<br>
-       🔹 Closing ranks for female candidates in CSE are significantly higher than general category ranks.</p>
-
+  
     <h2>2. Least Competitive IIT Programs for Female Candidates</h2>
     <table border="1">
         <tr>
@@ -198,9 +250,7 @@
         <tr><td>IIT Bhilai</td><td>Civil Engineering</td><td>20,798</td></tr>
         <tr><td>IIT Goa</td><td>Metallurgical & Materials Engineering</td><td>20,555</td></tr>
     </table>
-    <p>🔹 Mining, Civil, and Metallurgical Engineering have the least demand among female candidates.<br>
-       🔹 Closing ranks for female candidates in these branches are much higher than the general closing ranks.</p>
-
+   
     <h2>3. Top 5 IITs Based on Overall Competitiveness for Female Candidates</h2>
     <table border="1">
         <tr>
@@ -213,20 +263,7 @@
         <tr><td>IIT Kanpur</td><td>9,885</td></tr>
         <tr><td>IIT Hyderabad</td><td>10,206</td></tr>
     </table>
-    <p>💡 IIT Bombay remains the most competitive IIT for female candidates.</p>
-
-    <h2>4. Rising and Falling Branch Trends in IITs for Female Candidates</h2>
-    <h3>📈 Rising Branches (Gaining Popularity):</h3>
-    <ul>
-        <li>Artificial Intelligence & Data Science (Ranks under 5,000 in IIT Hyderabad & IIT Madras)</li>
-        <li>Mathematics & Computing (Ranks under 7,000)</li>
-    </ul>
-    
-    <h3>📉 Declining Branches (Losing Popularity):</h3>
-    <ul>
-        <li>Civil & Mechanical Engineering (Ranks exceeding 20,000)</li>
-        <li>Mining & Metallurgical Engineering (Ranks exceeding 22,000)</li>
-    </ul>
+ 
 
     <h2 id="other-female">Other Institutions (Female Candidates)</h2>
     
@@ -248,7 +285,6 @@
         <tr><td>NIT Jaipur</td><td>Computer Science & Engineering (B.Tech)</td><td>5,980</td></tr>
         <tr><td>IIIT Allahabad</td><td>Computer Science & Engineering (B.Tech)</td><td>6,200</td></tr>
     </table>
-    <p><strong>💡 CSE remains highly competitive at top NITs and IIITs for female candidates.</strong></p>
     
     <h3>2. Least Competitive NIT/IIIT/GFTI Programs for Female Candidates (Highest Closing Ranks - Female Quota)</h3>
     <table border="1">
@@ -262,7 +298,6 @@
         <tr><td>NIT Mizoram</td><td>Electrical Engineering (B.Tech)</td><td>1,342,875</td></tr>
         <tr><td>NIT Arunachal Pradesh</td><td>Biotechnology (B.Tech)</td><td>1,298,533</td></tr>
     </table>
-    <p><strong>💡 Remote NITs have extremely high closing ranks for female candidates, often exceeding 1 million.</strong></p>
     
     <h3>3. Top 5 NITs Based on Overall Competitiveness for Female Candidates (Lowest Avg. Closing Rank - Female Quota)</h3>
     <table border="1">
@@ -276,19 +311,9 @@
         <tr><td>NIT Calicut</td><td>12,530</td></tr>
         <tr><td>NIT Allahabad</td><td>13,015</td></tr>
     </table>
-    <p><strong>💡 NIT Trichy is the most competitive NIT for female candidates.</strong></p>
     
-    <h3>4. Rising and Falling Branch Trends in NITs/IIITs for Female Candidates</h3>
-    <p><strong>📈 Rising Branches (Gaining Popularity):</strong></p>
-    <ul>
-        <li>Artificial Intelligence & Data Science (IIIT Hyderabad, IIIT Bangalore, and NIT Trichy)</li>
-        <li>Electronics & Communication (Ranks under 15,000 in top NITs)</li>
-    </ul>
-    <p><strong>📉 Declining Branches (Losing Popularity):</strong></p>
-    <ul>
-        <li>Civil, Mechanical, and Biotechnology (Ranks above 1 lakh)</li>
-        <li>Metallurgical Engineering (Ranks exceeding 80,000)</li>
-    </ul>
+
+   
 
         </div>
     </div>
