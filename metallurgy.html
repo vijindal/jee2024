@@ -4,133 +4,251 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metallurgy Analysis</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f8f9fa;
-        }
-        header {
-            width: 100%;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            height: 100px; /* Set a fixed height */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        footer {
-            width: 100%;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .container {
-            display: flex;
-            width: 100%;
-            max-width: 1200px;
-        }
-        .menu {
-            width: 250px;
-            background-color: #f4f4f4;
-            padding: 15px;
-        }
-        .menu ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .menu ul li {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-        .menu ul li a {
-            text-decoration: none;
-            color: black;
-        }
-        .content {
-            flex-grow: 1;
-            padding: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-            text-align: left;
-            padding: 10px;
-        }
-        th {
-            background-color: #007bff;
-            color: white;
-        }
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-            .menu {
-                width: 100%;
-                text-align: center;
-            }
-            .menu ul li {
-                display: inline;
-                padding: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        Metallurgy Analysis
+        Analysis of Seat Allocation in IITs, NITs, and GFTIs via JEE 2024
     </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Overall Trends</a></li>
+            <li><a href="metallurgy.html">Trends in Materials & Metallurgy Engineering</a></li>
+            <!-- Add more links as needed -->
+        </ul>
+    </nav>
     <div class="container">
         <nav class="menu">
             <ul>
                 <li><a href="#overview">Overview</a></li>
-                <li><a href="#processes">Processes</a></li>
-                <li><a href="#applications">Applications</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#iit-all">IITs(All Candidates)</a></li>
+                <li><a href="#nit-all">NITs(All Candidates)</a></li>
+                <li><a href="#iit-female">IITs(Female Candidates)</a></li>
+                <li><a href="#nit-female">NITs(Female Candidates)</a></li>
             </ul>
         </nav>
         <main class="content">
-            <h1>Welcome to Metallurgy Analysis</h1>
-            <p>This section will contain detailed information about metallurgy processes and applications.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Process</th>
-                        <th>Description</th>
-                        <th>Applications</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Smelting</td>
-                        <td>Extracting metal from its ore by heating and melting.</td>
-                        <td>Iron, Copper, Lead</td>
-                    </tr>
-                    <tr>
-                        <td>Alloying</td>
-                        <td>Combining two or more metals to create an alloy.</td>
-                        <td>Steel, Bronze, Brass</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h2 id="#overview">Overview</h2>
+            <div class="content">
+                <p>Materials and Metallurgical Engineering is a field that focuses on the study of materials, their properties, and the processes used to create and manipulate them. This discipline is crucial for the development of new materials and technologies that drive innovation in various industries, including aerospace, automotive, construction, and electronics.</p>
+                <p>In IITs, NITs, and GFTIs in India, these programs are offered under various names, such as:</p>
+                <ul>
+                    <li>Material Science and Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))</li>
+                    <li>Materials Engineering (4 Years, Bachelor of Technology)</li>
+                    <li>Materials Engineering (5 Years, Integrated Master of Technology)</li>
+                    <li>Materials Science and Engineering (4 Years, Bachelor of Technology)</li>
+                    <li>Materials Science and Metallurgical Engineering (4 Years, Bachelor of Technology)</li>
+                    <li>Materials Science and Technology (5 Years, Bachelor and Master of Technology (Dual Degree))</li>
+                    <li>Metallurgical Engineering (4 Years, Bachelor of Technology)</li>
+                    <li>Metallurgical Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))</li>
+                    <li>Metallurgical Engineering and Materials Science (4 Years, Bachelor of Technology)</li>
+                    <li>Metallurgical and Materials Engineering (4 Years, Bachelor of Technology)</li>
+                    <li>Metallurgical and Materials Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))</li>
+                    <li>Metallurgy and Materials Engineering (4 Years, Bachelor of Technology)</li>
+                    <li>Mineral and Metallurgical Engineering (4 Years, Bachelor of Technology)</li>
+                </ul>
+                <p>Here is the list of institutes offering programs related to materials and metallurgical engineering:</p>
+                <h3>Indian Institutes of Technology (IITs)</h3>
+                <ul>
+                    <li>Indian Institute of Technology (BHU) Varanasi</li>
+                    <li>Indian Institute of Technology (ISM) Dhanbad</li>
+                    <li>Indian Institute of Technology Bhilai</li>
+                    <li>Indian Institute of Technology Bhubaneswar</li>
+                    <li>Indian Institute of Technology Bombay</li>
+                    <li>Indian Institute of Technology Delhi</li>
+                    <li>Indian Institute of Technology Gandhinagar</li>
+                    <li>Indian Institute of Technology Hyderabad</li>
+                    <li>Indian Institute of Technology Indore</li>
+                    <li>Indian Institute of Technology Jammu</li>
+                    <li>Indian Institute of Technology Jodhpur</li>
+                    <li>Indian Institute of Technology Kharagpur</li>
+                    <li>Indian Institute of Technology Madras</li>
+                    <li>Indian Institute of Technology Patna</li>
+                    <li>Indian Institute of Technology Roorkee</li>
+                    <li>Indian Institute of Technology Ropar</li>
+                </ul>
+                <h3>National Institutes of Technology (NITs)</h3>
+                <ul>
+                    <li>Malaviya National Institute of Technology Jaipur</li>
+                    <li>Maulana Azad National Institute of Technology Bhopal</li>
+                    <li>Motilal Nehru National Institute of Technology Allahabad</li>
+                    <li>National Institute of Advanced Manufacturing Technology, Ranchi</li>
+                    <li>National Institute of Technology Durgapur</li>
+                    <li>National Institute of Technology Karnataka, Surathkal</li>
+                    <li>National Institute of Technology Patna</li>
+                    <li>National Institute of Technology Raipur</li>
+                    <li>National Institute of Technology, Andhra Pradesh</li>
+                    <li>National Institute of Technology, Jamshedpur</li>
+                    <li>National Institute of Technology, Rourkela</li>
+                    <li>National Institute of Technology, Srinagar</li>
+                    <li>National Institute of Technology, Tiruchirappalli</li>
+                    <li>National Institute of Technology, Warangal</li>
+                    <li>Visvesvaraya National Institute of Technology, Nagpur</li>
+                </ul>
+                <h3>Other Institutes</h3>
+                <ul>
+                    <li>CU Jharkhand</li>
+                    <li>Indian Institute of Engineering Science and Technology, Shibpur</li>
+                    <li>Punjab Engineering College, Chandigarh</li>
+                    <li>University of Hyderabad</li>
+                </ul>
+                <h2 id="iit-all">IITs Analysis (Gender-Neutral)</h2>
+                <h2>Most Competitive IIT Programs (Based on Lowest Closing Ranks)</h2>
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Institute</th>
+            <th>Academic Program Name</th>
+            <th>Closing Rank</th>
+        </tr>
+        <tr><td>1</td><td>IIT Delhi</td><td>Materials Engineering</td><td>3,797</td></tr>
+        <tr><td>2</td><td>IIT Bombay</td><td>Metallurgical Engg. & Materials Science</td><td>4,193</td></tr>
+        <tr><td>3</td><td>IIT Madras</td><td>Metallurgical & Materials Engineering</td><td>4,748</td></tr>
+        <tr><td>4</td><td>IIT Kanpur</td><td>Materials Science and Engineering</td><td>6,008</td></tr>
+        <tr><td>5</td><td>IIT Roorkee</td><td>Metallurgical & Materials Engineering</td><td>7,051</td></tr>
+        <tr><td>6</td><td>IIT Kharagpur</td><td>Metallurgical & Materials Engineering</td><td>7,104</td></tr>
+        <tr><td>7</td><td>IIT Hyderabad</td><td>Materials Science & Metallurgical Engineering</td><td>8,197</td></tr>
+        <tr><td>8</td><td>IIT (BHU) Varanasi</td><td>Metallurgical Engineering</td><td>10,740</td></tr>
+        <tr><td>9</td><td>IIT Indore</td><td>Metallurgical Engg. & Materials Science</td><td>10,894</td></tr>
+        <tr><td>10</td><td>IIT Gandhinagar</td><td>Materials Engineering</td><td>11,298</td></tr>
+    </table>
+
+    <h2>Least Competitive IIT Programs (Based on Highest Closing Ranks)</h2>
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Institute</th>
+            <th>Academic Program Name</th>
+            <th>Closing Rank</th>
+        </tr>
+        <tr><td>1</td><td>IIT Jammu</td><td>Materials Engineering</td><td>16,439</td></tr>
+        <tr><td>2</td><td>IIT Bhilai</td><td>Materials Science & Metallurgical Engg.</td><td>15,871</td></tr>
+        <tr><td>3</td><td>IIT Patna</td><td>Metallurgical & Materials Engg.</td><td>15,438</td></tr>
+        <tr><td>4</td><td>IIT Patna</td><td>BTech (Metallurgical & Materials Engg.)</td><td>15,323</td></tr>
+        <tr><td>5</td><td>IIT Bhubaneswar</td><td>Metallurgical & Materials Engg.</td><td>14,898</td></tr>
+        <tr><td>6</td><td>IIT (ISM) Dhanbad</td><td>Mineral & Metallurgical Engg.</td><td>13,599</td></tr>
+        <tr><td>7</td><td>IIT Jodhpur</td><td>Materials Engineering</td><td>13,339</td></tr>
+        <tr><td>8</td><td>IIT Ropar</td><td>Metallurgical & Materials Engg.</td><td>13,009</td></tr>
+    </table>
+    
+    <h2 id="nit-all">NITs Analysis (Gender-Neutral)</h2>
+    <h2>Most Competitive NIT Programs (Gender-Neutral, OS Quota)</h2>
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Institute</th>
+            <th>Academic Program Name</th>
+            <th>Closing Rank</th>
+        </tr>
+        <tr><td>1</td><td>NIT Trichy</td><td>Metallurgical & Materials Engineering</td><td>21,397</td></tr>
+        <tr><td>2</td><td>NIT Warangal</td><td>Metallurgical & Materials Engineering</td><td>22,134</td></tr>
+        <tr><td>3</td><td>NIT Surathkal</td><td>Metallurgical & Materials Engineering</td><td>23,745</td></tr>
+        <tr><td>4</td><td>NIT Warangal</td><td>Metallurgical & Materials Engineering</td><td>24,421</td></tr>
+        <tr><td>5</td><td>NIT Trichy</td><td>Metallurgical & Materials Engineering</td><td>24,987</td></tr>
+        <tr><td>6</td><td>MNNIT Allahabad</td><td>Materials Engineering</td><td>27,104</td></tr>
+        <tr><td>7</td><td>NIT Rourkela</td><td>Metallurgical & Materials Engineering</td><td>28,739</td></tr>
+        <tr><td>8</td><td>MNIT Jaipur</td><td>Metallurgical & Materials Engineering</td><td>30,412</td></tr>
+        <tr><td>9</td><td>NIT Rourkela</td><td>Metallurgical & Materials Engineering (Dual Degree)</td><td>31,102</td></tr>
+        <tr><td>10</td><td>NIT Surathkal</td><td>Metallurgical & Materials Engineering</td><td>31,879</td></tr>
+    </table>
+
+    <h2>Least Competitive NIT Programs (Gender-Neutral, OS Quota)</h2>
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Institute</th>
+            <th>Academic Program Name</th>
+            <th>Closing Rank</th>
+        </tr>
+        <tr><td>1</td><td>NIT Srinagar</td><td>Metallurgical & Materials Engineering</td><td>121,453</td></tr>
+        <tr><td>2</td><td>NIT Raipur</td><td>Metallurgical & Materials Engineering</td><td>78,340</td></tr>
+        <tr><td>3</td><td>NIT Jamshedpur</td><td>Metallurgical & Materials Engineering</td><td>65,914</td></tr>
+        <tr><td>4</td><td>NIT Srinagar</td><td>Metallurgical & Materials Engineering</td><td>62,509</td></tr>
+        <tr><td>5</td><td>NIT Patna</td><td>Material Science & Engineering (Dual Degree)</td><td>59,632</td></tr>
+        <tr><td>6</td><td>NIT Andhra Pradesh</td><td>Metallurgical & Materials Engineering</td><td>55,849</td></tr>
+    </table>
+   
+
+    
+    <h2 id="iit-female">IITs Analysis (Female-Only)</h2>
+    <h2>Most Competitive IIT Programs (Female Candidates)</h2>
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Institute</th>
+            <th>Academic Program Name</th>
+            <th>Closing Rank</th>
+        </tr>
+        <tr><td>1</td><td>IIT Bombay</td><td>Metallurgical Engg. & Materials Science</td><td>8,491</td></tr>
+        <tr><td>2</td><td>IIT Delhi</td><td>Materials Engineering</td><td>9,743</td></tr>
+        <tr><td>3</td><td>IIT Madras</td><td>Metallurgical & Materials Engineering</td><td>10,699</td></tr>
+        <tr><td>4</td><td>IIT Kanpur</td><td>Materials Science and Engineering</td><td>13,464</td></tr>
+        <tr><td>5</td><td>IIT Kharagpur</td><td>Metallurgical & Materials Engineering</td><td>15,082</td></tr>
+        <tr><td>6</td><td>IIT Roorkee</td><td>Metallurgical & Materials Engineering</td><td>15,488</td></tr>
+        <tr><td>7</td><td>IIT Hyderabad</td><td>Materials Science & Metallurgical Engineering</td><td>15,999</td></tr>
+        <tr><td>8</td><td>IIT Gandhinagar</td><td>Materials Engineering</td><td>17,233</td></tr>
+        <tr><td>9</td><td>IIT (BHU) Varanasi</td><td>Materials Science & Technology (Dual Degree)</td><td>19,700</td></tr>
+        <tr><td>10</td><td>IIT Indore</td><td>Metallurgical Engg. & Materials Science</td><td>19,770</td></tr>
+    </table>
+
+    <h2>Least Competitive IIT Programs (Female Candidates)</h2>
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Institute</th>
+            <th>Academic Program Name</th>
+            <th>Closing Rank</th>
+        </tr>
+        <tr><td>1</td><td>IIT Jammu</td><td>Materials Engineering</td><td>25,778</td></tr>
+        <tr><td>2</td><td>IIT Bhilai</td><td>Materials Science & Metallurgical Engg.</td><td>25,107</td></tr>
+        <tr><td>3</td><td>IIT Patna</td><td>Metallurgical & Materials Engg.</td><td>24,442</td></tr>
+        <tr><td>4</td><td>IIT (ISM) Dhanbad</td><td>Mineral & Metallurgical Engg.</td><td>23,512</td></tr>
+        <tr><td>5</td><td>IIT Jodhpur</td><td>Materials Engineering</td><td>22,782</td></tr>
+        <tr><td>6</td><td>IIT (BHU) Varanasi</td><td>Metallurgical Engg. (Dual Degree)</td><td>22,750</td></tr>
+        <tr><td>7</td><td>IIT Patna</td><td>BTech (Metallurgical & Materials Engg.)</td><td>22,211</td></tr>
+        <tr><td>8</td><td>IIT Bhubaneswar</td><td>Metallurgical & Materials Engg.</td><td>21,693</td></tr>
+        <tr><td>9</td><td>IIT Ropar</td><td>Metallurgical & Materials Engg.</td><td>21,582</td></tr>
+    </table>
+
+    
+    <h2 id="nit-female">NITs Analysis (Female-Only)</h2>
+    <h2>Most Competitive NIT Programs (Female Candidates, OS Quota)</h2>
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Institute</th>
+            <th>Academic Program Name</th>
+            <th>Closing Rank</th>
+        </tr>
+        <tr><td>1</td><td>NIT Trichy</td><td>Metallurgical & Materials Engineering</td><td>28,329</td></tr>
+        <tr><td>2</td><td>NIT Surathkal</td><td>Metallurgical & Materials Engineering</td><td>32,742</td></tr>
+        <tr><td>3</td><td>NIT Warangal</td><td>Metallurgical & Materials Engineering</td><td>33,978</td></tr>
+        <tr><td>4</td><td>NIT Warangal</td><td>Metallurgical & Materials Engineering</td><td>34,591</td></tr>
+        <tr><td>5</td><td>NIT Surathkal</td><td>Metallurgical & Materials Engineering</td><td>35,840</td></tr>
+        <tr><td>6</td><td>MNNIT Allahabad</td><td>Materials Engineering</td><td>36,170</td></tr>
+        <tr><td>7</td><td>NIT Trichy</td><td>Metallurgical & Materials Engineering</td><td>43,127</td></tr>
+        <tr><td>8</td><td>NIT Rourkela</td><td>Metallurgical & Materials Engineering</td><td>43,900</td></tr>
+        <tr><td>9</td><td>MNIT Jaipur</td><td>Metallurgical & Materials Engineering</td><td>44,634</td></tr>
+        <tr><td>10</td><td>NIT Rourkela</td><td>Metallurgical & Materials Engineering (Dual Degree)</td><td>48,201</td></tr>
+    </table>
+
+    <h2>Least Competitive NIT Programs (Female Candidates, OS Quota)</h2>
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Institute</th>
+            <th>Academic Program Name</th>
+            <th>Closing Rank</th>
+        </tr>
+        <tr><td>1</td><td>NIT Srinagar</td><td>Metallurgical & Materials Engineering</td><td>158,691</td></tr>
+        <tr><td>2</td><td>NIT Raipur</td><td>Metallurgical & Materials Engineering</td><td>95,943</td></tr>
+        <tr><td>3</td><td>NIT Jamshedpur</td><td>Metallurgical & Materials Engineering</td><td>71,436</td></tr>
+        <tr><td>4</td><td>NIT Srinagar</td><td>Metallurgical & Materials Engineering</td><td>66,731</td></tr>
+        <tr><td>5</td><td>NIT Patna</td><td>Material Science & Engineering (Dual Degree)</td><td>59,996</td></tr>
+        <tr><td>6</td><td>NIT Andhra Pradesh</td><td>Metallurgical & Materials Engineering</td><td>59,744</td></tr>
+    </table>
+    
+            </div>
         </main>
     </div>
     <footer>

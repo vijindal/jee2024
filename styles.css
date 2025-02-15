@@ -27,7 +27,7 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -80,7 +80,7 @@ table, th, td {
 }
 
 th {
-    background-color: #007bff;
+    background-color: #555;
     color: white;
 }
 
@@ -96,33 +96,35 @@ th {
         display: inline;
         padding: 10px;
     }
-    .navbar {
-        width: 100%;
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px 0;
-    }
-    
-    .navbar ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .navbar ul li {
-        margin: 0 15px;
-    }
-    
-    .navbar ul li a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-    }
-    
-    .navbar ul li a:hover {
-        text-decoration: underline;
-    }
+}
+
+.navbar {
+    width: 100%;
+    background-color: #555; /* Slightly lighter than header */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    padding-right: 20px; /* Add some padding to the right */
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
 }

@@ -7,24 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="navbar"></div>
-    <script>
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-            });
-    </script>
     <header>
         Metallurgy Analysis
     </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="metallurgy.html">Metallurgy</a></li>
+            <!-- Add more links as needed -->
+        </ul>
+    </nav>
     <div class="container">
         <nav class="menu">
             <ul>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#processes">Processes</a></li>
                 <li><a href="#applications">Applications</a></li>
-</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <main class="content">
