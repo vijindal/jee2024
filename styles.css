@@ -128,3 +128,15 @@ th {
 .navbar ul li a:hover {
     text-decoration: underline;
 }
+.image-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 100%; /* Ensures the image takes up full width of the container */
+    max-width: 450px; /* Limits max width to 450px */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
